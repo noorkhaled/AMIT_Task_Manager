@@ -36,9 +36,9 @@ A lightweight **Task Management** web app built with **plain PHP** (no framework
 - Composer
 
 ---
-git clone https://github.com/noorkhaled/AMIT_Task_Manager.git task-manager
-cd task-app
-composer dump-autoload
+- git clone https://github.com/noorkhaled/AMIT_Task_Manager.git task-manager
+- cd task-app
+- composer dump-autoload
 ----
 ## Run It
 1) Run Sql inside schema.sql to setup your DB
