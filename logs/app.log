@@ -1,0 +1,50 @@
+[2025-09-24 23:03:01] ERROR: syntax error, unexpected token "endif"
+#0 D:\AMIT\Task\app\Core\Controller.php(11): App\Core\View::render('tasks/index', Array)
+#1 D:\AMIT\Task\app\Controllers\TaskController.php(28): App\Core\Controller->view('tasks/index', Array)
+#2 D:\AMIT\Task\app\Core\Router.php(50): App\Controllers\TaskController->index()
+#3 D:\AMIT\Task\public\index.php(30): App\Core\Router->dispatch()
+#4 {main}
+[2025-09-24 23:03:57] INFO: Task updated for Try the app
+[2025-09-24 23:04:15] INFO: Task created for wwcmcm
+[2025-09-24 23:04:22] INFO: Task deleted with ID 404
+[2025-09-24 23:04:40] INFO: Login successful for noorkhaled@gmail.com
+[2025-09-24 23:05:07] INFO: Login successful for noorkhaled@gmail.com
+[2025-09-24 23:05:14] INFO: Task deleted with ID 394
+[2025-09-24 23:05:18] INFO: Task deleted with ID 398
+[2025-09-24 23:05:21] INFO: Task deleted with ID 403
+[2025-09-24 23:05:24] INFO: Task deleted with ID 397
+[2025-09-24 23:05:31] INFO: Task deleted with ID 390
+[2025-09-24 23:10:40] INFO: Task deleted with ID 389
+[2025-09-24 23:10:42] INFO: Task deleted with ID 402
+[2025-09-24 23:10:44] INFO: Task deleted with ID 399
+[2025-09-24 23:10:47] INFO: Task deleted with ID 378
+[2025-09-24 23:10:49] INFO: Task deleted with ID 392
+[2025-09-24 23:10:51] INFO: Task deleted with ID 393
+[2025-09-24 23:10:54] INFO: Task deleted with ID 375
+[2025-09-24 23:11:27] INFO: Task created for a
+[2025-09-24 23:11:31] INFO: Task deleted with ID 1
+[2025-09-24 23:12:47] INFO: Login failed for noorkhaled@gmail.com
+[2025-09-24 23:12:57] INFO: Register failed for noorkhaled@gmail.com
+[2025-09-24 23:13:08] INFO: Registration successful for noorkhaled@gmail.com
+[2025-09-24 23:13:20] INFO: Task created for 1122
+[2025-09-24 23:13:23] INFO: Task deleted with ID 2
+[2025-09-24 23:14:34] INFO: Login failed for noorkhaled@gmail.com
+[2025-09-24 23:14:38] INFO: Login successful for noorkhaled@gmail.com
+[2025-09-24 23:17:48] INFO: Register failed for noorkhaled@gmail
+[2025-09-24 23:18:04] INFO: Login failed for noorkhaled@gmail.com
+[2025-09-24 23:18:10] INFO: Login successful for noorkhaled@gmail.com
+[2025-09-24 23:24:20] INFO: Login failed for noorkhaled@gmail.com
+[2025-09-24 23:24:26] INFO: Registration successful for noorkhaled@gmail.com
+[2025-09-24 23:24:34] INFO: Task created for aaa
+[2025-09-24 23:25:45] ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM tasks WHERE id='1' AND user_id='1'' at line 1
+#0 D:\AMIT\Task\app\Repositories\TaskRepository.php(79): PDOStatement->execute(Array)
+#1 D:\AMIT\Task\app\Services\TaskService.php(76): App\Repositories\TaskRepository->delete(1, 1)
+#2 D:\AMIT\Task\app\Controllers\TaskController.php(95): App\Services\TaskService->delete(1, 1)
+#3 D:\AMIT\Task\app\Core\Router.php(50): App\Controllers\TaskController->destroy()
+#4 D:\AMIT\Task\public\index.php(30): App\Core\Router->dispatch()
+#5 {main}
+[2025-09-24 23:26:40] INFO: Registration successful for noorkhaled@gmail.com
+[2025-09-24 23:26:47] INFO: Task created for aaa
+[2025-09-24 23:28:20] INFO: Registration successful for noorkhaled@gmail.com
+[2025-09-24 23:28:25] INFO: Task created for a
+[2025-09-24 23:28:28] INFO: Task deleted with ID 1
