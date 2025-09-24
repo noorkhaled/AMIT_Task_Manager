@@ -37,7 +37,7 @@ A lightweight **Task Management** web app built with **plain PHP** (no framework
 
 ---
 - git clone https://github.com/noorkhaled/AMIT_Task_Manager.git task-manager
-- cd task-app
+- cd task-manager
 - composer dump-autoload
 ----
 ## Run It
