@@ -26,17 +26,26 @@
               <label class="form-label">Status</label>
               <select class="form-select" name="status">
                 <?php
-                  $statuses = ['pending'=>'Pending','in_progress'=>'In Progress','done'=>'Done'];
-                  foreach ($statuses as $k=>$v) {
-                    $s = $k===$task->status ? 'selected' : '';
-                    echo "<option value=\"$k\" $s>$v</option>";
-                  }
+                $statuses = ['pending' => 'Pending', 'in_progress' => 'In Progress', 'done' => 'Done'];
+                foreach ($statuses as $k => $v) {
+                  $s = $k === $task->status ? 'selected' : '';
+                  echo "<option value=\"$k\" $s>$v</option>";
+                }
                 ?>
               </select>
             </div>
+            <?php
+            $tz = new DateTimeZone('Africa/Cairo'); // adjust if needed
+            $tomorrow = (new DateTime('tomorrow', $tz))->format('Y-m-d');
+            ?>
             <div class="col-md-6">
               <label class="form-label">Due Date</label>
-              <input class="form-control" type="date" name="due_date" value="<?= htmlspecialchars($task->due_date ?? '') ?>">
+              <input
+                class="form-control"
+                type="date"
+                name="due_date"
+                min="<?= $tomorrow ?>"
+                value="<?= htmlspecialchars($task->due_date ?? '') ?>">
             </div>
           </div>
 
